@@ -78,6 +78,9 @@ public class GuestbookController extends HttpServlet {
 			
 			//리다이렉트
 			response.sendRedirect("/guestbook2/gbc?action=addList");
+			
+		} else {
+			System.out.println("파라미터값 없음");
 		}
 		
 	}
