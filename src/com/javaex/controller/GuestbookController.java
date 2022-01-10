@@ -35,7 +35,7 @@ public class GuestbookController extends HttpServlet {
 			
 			//1) 데이터 넣어주기
 			request.setAttribute("gbList", guestbookList);
-			//2-1)컨트롤러 -> 일시키기
+			//2-1)컨트롤러 -> 일 시키기
 			RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/addList.jsp");
 			//2-2)포워드
 			rd.forward(request, response);
